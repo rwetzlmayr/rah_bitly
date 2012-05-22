@@ -201,10 +201,6 @@ class rah_bitly {
 		if(!$permlink)
 			return;
 
-		#
-		$permlink = 'http://example.com/#'.$permlink;
-		#
-
 		$uri =
 			'http://api.bitly.com/v3/shorten'.
 				'?login='.urlencode($prefs['rah_bitly_login']).
